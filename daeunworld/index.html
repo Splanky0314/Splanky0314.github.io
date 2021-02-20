@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daeun World</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/13cd39ba68.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#nav").load("necessary/nav.html")
+            $("#header").load("necessary/header.html")
+            $("#footer").load("necessary/footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+            $("#header").load("header.html #navbar")
+            */       
+        });
+    </script> 
+</head>
+<body>
+    <nav id="nav"></nav>
+    <img id="main_wallpaper" src="./img/background1.jpg" alt="" srcset="">
+    
+    <header>
+        <div id="title">
+            <a class="main_wallpaper-text-1" href="./index.html">Daeun World</a>
+            <a class="main_wallpaper-text-2" href="./index.html">- Lobby -</a>
+        </div>
+    </header>
+
+
+    <article id="contents">
+        <div id="Infosite">
+            <h1>Info</h1>
+            <p><a href="../info/info.html">Go Info Site</a></p>
+        </div>
+
+        <div id="explanation">
+            <h1>사이트 소개</h1>
+            <p>Daeun World는 DaeunKim의 2번째 Github Page로 2020.12.31에 개발이 시작되었다.</p>
+            
+            <h2>Daeun World 개발 목적</h2>
+                <p>Daeun World 개발을 통해 웹 프로그래밍 능력을 기르기 위함을 첫번째 목적으로 하여 만들어졌습니다. </p>
+            <h2>Daeun World 개발 과정</h2>
+            <h2>개발자 소개</h2>
+            <h2>Daeun World의 특징</h2>
+            
+            <h2>게시판별 소개</h2>
+            <ol>
+                <li><h3>Info</h3></li>
+                    <p>Daeun의 자기소개 사이트이다. </p>
+
+                <li><h3>사이트 소개</h3></li>
+                    <p>Daeun World 사이트에 대한 소개를 담고 있다.</p>
+
+                <li><h3>탐구 프로젝트</h3></li>
+                    <p>학교에서 진행하거나 개인적으로 진행한 프로젝트의 결과물을 업로드 해 둔 공간이다.</p>
+
+                <li><h3>개발 일지</h3></li>
+                    <p>날마다 개발한 내용과 간단한 느낀점을 작성해 둔 게시판이다.</p>
+
+                <li><h3>방명록</h3></li>
+                    <p>방문한 사람들이 댓글 형식으로 흔적을 남길 수 있는 공간이다.</p>
+            </ol>
+
+            <h2>Daeun World 개발에 도움을 주신 분들</h2>
+            <h2>개발할 때 참고한 자료</h2>
+                <ul>
+                    <li>상단 바 만들기: https://www.youtube.com/watch?v=X91jsJyZofw</li>
+                </ul>
+            
+        </div>
+
+        <div id="studyproject">
+            <h1>탐구 프로젝트</h1>
+            <p></p>
+        </div>
+
+        <div id="developmentdiary">
+            <h1>개발 일지</h1>
+            <p></p>
+        </div>
+
+        <div id="guestbook">
+            <h1>방명록</h1>
+            <p></p>
+        </div>
+    </article>
+
+    <div id="footer"></div>
+</body>
+</html>

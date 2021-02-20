@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daeun World</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/13cd39ba68.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#nav").load("necessary/nav.html")
+            $("#header").load("necessary/header.html")
+            $("#footer").load("necessary/footer.html")
+            /* id 지정을 통해서도 가능합니다. 
+            $("#header").load("header.html #navbar")
+            */       
+        });
+    </script> 
+</head>
+<body>
+    <nav id="nav"></nav>
+
+    <article id="contents">
+        helloworld
+    </article>
+
+    <div id="footer"></div>
+</body>
+</html>

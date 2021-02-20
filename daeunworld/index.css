@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Grenze+Gotisch:wght@900&family=Jua&display=swap');
+:root {
+    --text-color: #f0f4f5;
+    --background-color: #263343;
+    --title-font-color: #263343;
+    --accent-color1: #d49466;
+    --highlight-color: gray;
+
+    --font-size: 1rem;
+    --bar-elements-font-size: 2.4rem;
+    --bar_logo-font-size: 2.5rem;
+    --main_wallpaper-text1-font-size: 5rem;
+    --main_wallpaper-text2-font-size: 3rem;
+    --h2-font-size: 2.2rem;
+    --section-p-font-size: 1rem;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+a:visited {text-decoration: none;}
+
+* {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0;
+}
+
+/* navbar */
+.navbar {
+    /* 아이템 한 줄에 보여주기 */
+    display: flex; 
+    /* 사이사이에 공간 */
+    justify-content: space-between; 
+    /* 수직 중간 */
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 2px 8px 2px 12px;
+}
+
+.navbar_logo {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: var(--bar_logo-font-size);
+}
+.navbar_logo a{
+    color: var(--accent-color1);
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.navbar_menu li {
+    padding: 8px 8px 12px 8px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.6rem;
+}
+.navbar_menu li:hover {
+    background-color: var(--highlight-color);
+    border-radius: 5px;
+}
+
+.navbar_icons {
+    list-style: none;
+    color: var(--text-color);
+    display: flex;
+    padding-left: 0;
+    margin:0;
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+}
+
+.navbar_toogleBtn {
+    position: absolute;
+    right: 32px;
+    padding-top: 14px;
+    display: none;
+    color: var(--accent-color1);
+}
+
+#main_wallpaper {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#title .main_wallpaper-text-1 {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 9rem;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: var(--main_wallpaper-text1-font-size);
+    color: var(--title-font-color);
+    background: unset;
+    background-color: unset;
+    padding-top: 4rem;
+}
+#title .main_wallpaper-text-2 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 19rem;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    font-family: 'Hanalei Fill', cursive;
+    font-size: var(--main_wallpaper-text2-font-size);
+    background: unset;
+    background-color: unset;
+}
+
+/* 사이트별 세부 내용 */
+article {
+    margin: 50px 20px 2px 20px;
+}
+section {
+    margin-bottom: 4rem;
+}
+section h2 {
+    font-size: var(--h2-font-size);
+}
+section p {
+    font-size: var(--section-p-font-size);
+}
+
+header h1 {
+    font-size: var(--main_wallpaper-text2-font-size);
+    text-align: center;
+    font-family: 'Do Hyeon', sans-serif;
+    color: var(--title-font-color);
+    margin-bottom: 3px;
+    background-color:unset;
+}
+header h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer {
+    margin: 3rem 2rem 1.5rem 2rem;
+    text-align: center;
+}
+
+/* Explaination */
+
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons {
+        display: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar_toogleBtn {
+        position: absolute;
+        right: 32px;
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+}
